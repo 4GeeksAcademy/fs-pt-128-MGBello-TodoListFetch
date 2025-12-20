@@ -42,8 +42,7 @@
     word-break: break-word;
     word-wrap: break-word;
     white-space: normal;
-    flex-grow: 1;
-    max-width: 70%;
+
 }
 
 .tasks input {
@@ -51,7 +50,7 @@
     word-wrap: break-word;
     white-space: normal;
     flex-grow: 1;
-    max-width: 85%;
+
 }
 
 .tasks .edit,
@@ -79,4 +78,17 @@
         opacity: 1;
         visibility: visible;
     }
+}
+
+.check {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.button-check {
+    border-radius: 100%;
+}
+
+.button-check i {
+    font-size: 18px !important;
+    font-weight: bold !important;
 }

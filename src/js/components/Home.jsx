@@ -15,7 +15,7 @@ const Home = () => {
 	return (
 		<div className="container d-flex flex-column align-items-center justify-content-center">
 			<div className="cardContainer shadow-custom w-100 d-flex flex-column align-items-center">
-				<Header />
+				<Header todoList={todoList} setTodoList={setTodoList} list={list} setList={setList} />
 				<ListSection todoList={todoList} setTodoList={setTodoList} list={list} setList={setList} />
 				<Footer todoList={todoList} />
 			</div>
