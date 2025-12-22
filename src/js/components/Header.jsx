@@ -47,7 +47,7 @@ export const Header = ({ todoList, setTodoList }) => {
                     <div className="modal-dialog">
                         <div className="modal-content">
                             <div className="modal-header">
-                                <h5 className="modal-title text-dark">Complete Tasks</h5>
+                                <h5 className="modal-title text-dark">Complete Tasks {todoList.length}</h5>
                                 <button type="button" className="btn-close" data-bs-dismiss="modal"></button>
                             </div>
                             <div className="modal-body text-start">
