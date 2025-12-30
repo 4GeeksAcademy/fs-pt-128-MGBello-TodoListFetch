@@ -70,7 +70,9 @@ export const ListSection = ({ todoList, setTodoList, list, setList }) => {
 
 
     const [isEdit, setIsEdit] = useState(null)
-    
+    const handlerChange = (e) => {
+        setList(e.target.value)
+    }
     const handlerClick = () => {
         if (list.trim() == "") {
             alert('You cannot leave the text input blank.')
@@ -90,11 +92,7 @@ export const ListSection = ({ todoList, setTodoList, list, setList }) => {
         updateList[id] = { ...updateList[id], label: newValue };
         setTodoList(updateList)
     }
-    const handlerCheck = (value, id) => {
-        if (value) {
-            setIsCheck(true)
-        }
-    }
+
 
     return (
         <main className="main d-flex flex-column align-items-center justify-content-center">
