@@ -11,6 +11,7 @@ export const ListSection = ({ todoList, setTodoList, list, setList }) => {
         if (!response.ok) {
             console.log(response);
             createUser()
+            return
         }
         const data = await response.json()
         setTodoList(data.todos)
@@ -69,10 +70,7 @@ export const ListSection = ({ todoList, setTodoList, list, setList }) => {
 
 
     const [isEdit, setIsEdit] = useState(null)
-    const handlerChange = (e) => {
-        setList(e.target.value)
-    }
-
+    
     const handlerClick = () => {
         if (list.trim() == "") {
             alert('You cannot leave the text input blank.')
